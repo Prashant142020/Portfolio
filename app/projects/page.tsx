@@ -55,7 +55,6 @@ export default function ProjectsPage() {
                 height={400}
                 src={item.imageUrl}
                 alt="Image Description"
-                
                 className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl"
               />
             </div>

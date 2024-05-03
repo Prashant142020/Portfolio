@@ -1,9 +1,7 @@
- 
-
-import { NextResponse } from 'next/server';
-import { unstable_noStore as noStore } from 'next/cache';
-import getSession from '@/lib/getSession';
-import db from '@/lib/db';
+import { NextResponse } from "next/server";
+import { unstable_noStore as noStore } from "next/cache";
+import getSession from "@/lib/getSession";
+import db from "@/lib/db";
 
 export async function GET() {
   noStore();
@@ -11,7 +9,7 @@ export async function GET() {
   const user = session?.user;
 
   if (!user || user === null || !user.id) {
-    throw new Error('Something went wrong...');
+    throw new Error("Something went wrong...");
   }
 
   let dbUser = await db.user.findUnique({
@@ -25,15 +23,15 @@ export async function GET() {
       data: {
         id: user.id,
         // todo: i have to fix these issue
-         name: user.name ?? '',
-       
-        email: user.email ?? '',
+        name: user.name ?? "",
+
+        email: user.email ?? "",
         // image: user.picture,
       },
     });
   }
 
   return NextResponse.redirect(
-    'https://portfolio-nextjs14-ruby.vercel.app/guestbook'
+    "https://portfolio-nextjs14-ruby.vercel.app/guestbook"
   );
 }
