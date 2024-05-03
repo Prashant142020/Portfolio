@@ -25,7 +25,7 @@ export async function GET() {
       data: {
         id: user.id,
         // todo: i have to fix these issue
-         name: user.given_name ?? '',
+         name: user.name ?? '',
        
         email: user.email ?? '',
         // image: user.picture,
