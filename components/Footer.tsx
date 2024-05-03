@@ -17,7 +17,7 @@ export function Footer() {
       </ul>
 
       <p className="mt-2 text-center  text-muted-foreground">
-        &copy; 2024 Jan Marshal. All Rights reserved.
+        &copy; 2024 Prashant. All Rights reserved.
       </p>
     </footer>
   );

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import me from "../../public/me.jpeg";
+// import me from "../../public/me.jpeg";
 
 export function Hero() {
   return (
@@ -29,9 +29,11 @@ export function Hero() {
       </div>
 
       <Image
-        src={me}
+        src="/jan.jpeg"
         alt="Jan marshal"
-        className="col-span-1 h-[500px] object-cover rounded-2xl bg-gray-100"
+        height={500}
+        width={500}
+        className="col-span-1 h-[500px] object-cover object-top rounded-lg bg-gray-100"
         priority
       />
     </div>
