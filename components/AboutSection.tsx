@@ -1,11 +1,10 @@
-import { Card } from '@/components/ui/card';
- 
+import { Card } from "@/components/ui/card";
 
-import Image from 'next/image';
+import Image from "next/image";
 export function AboutSection() {
   return (
     <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10">
-      <Card className="col-span-1 lg:col-span-2 border-none bg-gray-100 p-8">
+      <Card className="col-span-1 lg:col-span-2 border-none bg-gray-100 dark:bg-black   p-8">
         <h1 className="text-4xl lg:text-6xl">
           Passionate versitile Web Developer who loves to create
         </h1>
@@ -35,7 +34,7 @@ export function AboutSection() {
 
       <div className="col-span-1">
         <Image
-          src= '/jan.jpeg'
+          src="/jan.jpeg"
           width={500}
           height={500}
           alt="Jan marshal"

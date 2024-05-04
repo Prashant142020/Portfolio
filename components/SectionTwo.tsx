@@ -82,7 +82,7 @@ export function SectionTwo() {
         />
       </div>
       <div className="flex flex-col w-full col-span-1 lg:col-span-2 gap-4">
-        <Card className="bg-gray-100 border-none">
+        <Card className="bg-gray-100  dark:bg-black  border-none">
           <CardHeader>
             <CardTitle>Explore my stack</CardTitle>
             <CardDescription>Check out the tools i use daily</CardDescription>
@@ -98,7 +98,7 @@ export function SectionTwo() {
           {socialMedia.map((item) => (
             <Card
               key={item.id}
-              className="p-4 flex flex-col items-center sm:items-start bg-gray-100 border-none"
+              className="p-4 flex flex-col items-center sm:items-start bg-gray-100 dark:bg-black border-none"
             >
               <Image src={item.icon} alt="Icon" className="w-16 h-16" />
               <h1 className="text-2xl font-medium pt-3">{item.name}</h1>

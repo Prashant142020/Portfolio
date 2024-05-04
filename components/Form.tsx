@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Loader2 } from 'lucide-react';
-import { useFormStatus } from 'react-dom';
-import { useRef } from 'react';
-import { postData } from '@/action/action';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Loader2 } from "lucide-react";
+import { useFormStatus } from "react-dom";
+import { useRef } from "react";
+import { postData } from "@/action/action";
 
 export function Form() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -39,7 +39,7 @@ function SubmitButton() {
       {pending ? (
         <Button disabled>
           <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            Wait
+          Wait
         </Button>
       ) : (
         <Button type="submit">Send </Button>

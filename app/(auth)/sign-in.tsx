@@ -1,11 +1,11 @@
-import { signIn } from '@/auth';
-import { Button } from '@/components/ui/button';
+import { signIn } from "@/auth";
+import { Button } from "@/components/ui/button";
 
 export function SignIn() {
   return (
     <form
       action={async () => {
-        'use server';
+        "use server";
         await signIn();
       }}
     >
